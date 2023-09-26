@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Form Example</title>
+</head>
+
+<body bgcolor="yellow" text="purple">
+    <h1>
+        &#127874;
+        Order a Birthday Cake
+        &#128515;
+    </h1>
+
+    <form id="orderform">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="yourName"> Your Name: </label>
+            <input type="text" id="yourName" size="20" placeholder="Enter Your Name: ">
+            
+            <br><br>
+
+            <label for="yourEmail"> Your Email: </label>
+            <input type="email" id="yourEmail" size="20" placeholder="example@domain.com">
+
+            <br><br>
+
+            <label for="yourPhone"> Your Phone Numer: </label>
+            <input type="tel" id="yourPhone" size="20" placeholder="555-555-5555">
+
+            <br><br>
+
+            <label for="pickupDate>"> Desired Pickup Date: </label>
+            <input type="date" id="pickupDate">
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Design Your Cake</legend>
+            <p>
+                Pick a Shape:
+            </p>
+
+            <input type="radio" name="shape" id="circle" value="circle">
+            <label for="circle"> Circle &#9679;</label>
+
+            <br>
+
+            <input type="radio" name="shape" id="rectangle" value="rectangle">
+            <label for="rectangle">Rectangle &#9646;</label>
+
+            <br>
+
+            <input type="radio" name="shape" id="square" value="square">
+            <label for="square">Square &#9632;</label>
+
+            <br>
+
+            <input type="radio" name="shape" id="heart" value="heart">
+            <label for="heart">Heart &hearts;</label>
+
+            <br><br>
+
+            <label for="layers"> How Many Layers?</label>
+            
+            <select id="layers">
+                <option value="1">One Layer</option>
+                <option value="2">Two Layers</option>
+                <option value="3">Three Layers</option>
+                <option value="4">Four Layers</option>
+            </select>
+
+            <br><br>
+
+            <label for="flavor">Pick a Flavor</label>
+            <input list="flavor">
+                <datalist id="flavor">
+                    <!-- these option tags do not need to have closing partners -->
+                    <option value="Black Forest Cake">
+                    <option value="Cheesecake">
+                    <option value="Chocolate Cake">Cake with some chocolate</option>
+                    <option value="Funfetti">
+                    <option value="Lemon Cake">
+                    <option value="Pound Cake">
+                    <option value="Red Velvet Cake">
+                    <option value="Strawberry Cake">
+                    <option value="Yellow/Vanilla Cake">
+                </datalist>
+
+            <br><br>
+
+            <label for="frostingColor">Pick a Frosting Color: </label>
+            <input type="color" id="frostingColor" value="#ffffff">
+
+            <br><br>
+
+            <p>
+                Pick Toppings:
+            </p>
+
+            <input type="checkbox" id="cherries" value="cherries">
+            <label for="cherries">Cherries</label>
+
+            <br>
+
+            <input type="checkbox"id="sprinkles" value="sprinkles">
+            <label for="sprinkles">Sprinkles</label>
+
+            <br>
+
+            <input type="checkbox"id="whipperCream" value="whipperCream">
+            <label for="whipperCream">Whipped Cream</label>
+
+            <br><br>
+
+            <label for="message"> What Message Do You Want on the Cake?</label>
+
+            <br>
+
+            <textarea id="message" cols="30" rows="5" placeholder="Happy Birdthday!"></textarea>
+
+            <br><br>
+
+            <label for="candles">How many Candles?</label>
+            <input type="number" id="candles" min="0" max="100" value="1">
+
+            <br><br>
+
+            <input type="reset" value="Clear Form">
+            <input type="submit" value="Order Cake" onclick="alert('Thank You for your order!');">
+
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
