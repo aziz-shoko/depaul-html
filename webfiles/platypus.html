@@ -13,7 +13,7 @@
             margin-left: 50px;
             margin-right: 50px;
             margin-top: 0px;
-            margin-bottom: 800px; 
+            margin-bottom: 800px;
         }
 
         h1 {
@@ -25,13 +25,74 @@
             letter-spacing: 3px;
             word-spacing: 5px;
             font-weight: 100;
-            text-shadow: 5px 5px 0px white;
-            border: 5px solid black;
+            text-shadow: 5px 5px 0px yellow;
+            padding: 5px;
+            border: 2px solid black;
         }
 
-        h2 {}
+        h2 {
+            color: maroon;
+            font-family: comic sans ms;
+            font-size: 36px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
 
-        p {}
+        p {
+            color: black;
+            font-family: arial;
+            font-size: 16px;
+            line-height: 24px;
+            text-indent: 35px;
+        }
+
+        /* custom class to remove indents */
+        .no-indent {
+            text-indent: 0px;
+        }
+
+        a:link {
+            color: maroon;
+        }
+
+        a:visited {
+            color: maroon;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:active {
+            color: green;
+            text-decoration: line-through;
+        }
+
+        a.special:link {
+            color: darkblue;
+        }
+
+        a.special:visited {
+            color: darkblue;
+        }
+
+        a.special:hover {
+            font-size: 16px;
+            font-style: italic;
+            color: deepskyblue;
+            text-decoration: underline;
+        }
+
+        a.special:active {
+            text-decoration: overline;
+        }
+
+        /* custom class for highlighted text */
+        .highlight {
+            background-color: lightyellow;
+        }
     </style>
 </head>
 
@@ -41,7 +102,7 @@
         The Platypus
     </h1>
 
-    <p>
+    <p class="no-indent">
         <a href="#sum">
             Summary
         </a>
@@ -78,8 +139,11 @@
         fake, made of several animals sewn together, when it was first looked at by scientists in 1799.
     </p>
     <p>
-        The unusual appearance of this egg-laying, duck-billed, beaver-tailed, otter-footed mammal baffled European
-        naturalists when they first encountered it, with some considering it an elaborate hoax. It is one of the few
+        <span class="highlight">
+            The unusual appearance of this egg-laying, duck-billed, beaver-tailed, otter-footed mammal baffled European
+            naturalists when they first encountered it, with some considering it an elaborate hoax.
+        </span>
+        It is one of the few
         species
         of venomous mammals: the male platypus having a spur on the hind foot that delivers a venom capable of causing
         severe pain to humans. The unique features of the platypus make it an important subject in the study of
@@ -156,15 +220,15 @@
         vocalizations have been reported in captive specimens.
     </p>
 
-    <p>
+    <p class="no-indent">
         Image and Text Credit:
-        <a href="https://www.wikipedia.org" target="_blank">
+        <a href="https://www.wikipedia.org" target="_blank" class="special">
             Wikipedia
         </a>
     </p>
 
-    <p>
-        <a href="#top">
+    <p class="no-indent">
+        <a href="#top" class="special">
             Back to Top
         </a>
     </p>
