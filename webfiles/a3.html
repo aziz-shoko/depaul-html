@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 3</title>
+</head>
+
+<body bgcolor="black" text="white">
+    <h1>
+        UFC Sports Betting
+    </h1>
+
+    <form id="orderform">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="yourName">Enter Full Name: </label>
+            <input type="text" id="yourName" size="20" placeholder="Enter Your Full Name">
+
+            <br><br>
+
+            <label for="yourEmail">Enter Email: </label>
+            <input type="text" id="yourEmail" size="20" placeholder="Enter Your Email">
+
+            <br><br>
+
+            <label for="yourPhone">Enter Phone Number:</label>
+            <input type="text" id="yourEmail" size="20" placeholder="xxx-xxx-xxxx">
+
+            <br><br>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for="creditCard">Enter Credit Card Number:</label>
+                <input type="text" id="creditCard" size="25" placeholder="xxxx-xxxx-xxxx-xxxx">
+
+                <br><br>
+
+                <label for="expirationDate">Enter Expiration Date:</label>
+                <input type="text" id="expirationDate" size="10" placeholder="xx/xxxx">
+
+                <label for="securityCode">Enter Security Code:</label>
+                <input type="text" id="securityCode" size="10" placeholder="xxx">
+
+                <br><br>
+
+                <label for="country">Enter Country:</label>
+                <input type="text" id="country" size="20" placeholder="Country">
+
+                <br><br>
+
+                <label for="postalCode">Enter Postal Code</label>
+                <input type="text" id="postalCode" size="10" placeholder="xxxxx">
+            </fieldset>
+        </fieldset>
+    </form>
+
+    <h2>
+        UFC 294 Card
+    </h2>
+
+    <form>
+        <fieldset>
+            <legend>Choose Your Bets</legend>
+
+            <br>
+
+            <label for="fighter">Choose Your Fighter</label>
+            <input list="fighter">
+            <datalist id="fighter">
+                <option value="Islam Makhachev">
+                <option value="Charles Olivera">
+                <option value="Paulo Costa">
+                <option value="Khamzat Chimaev">
+                <option value="Magomed Ankalaev">
+                <option value="Johnny Walker">
+            </datalist>
+
+            <br><br>
+
+            <label for="weight">Will Your Fighter Make Weight?</label>
+            <select id="weight">
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select>
+
+            <p>
+                Choose by which method your fighter will win:
+            </p>
+
+            <input type="radio" name="winType" id="submission" value="submission">
+            <label for="submission">Submission</label>
+
+            <br>
+
+            <input type="radio" name="winType" id="KO" value="KO">
+            <label for="KO">Knock Out (KO)</label>
+
+            <br>
+
+            <input type="radio" name="winType" id="Decision" value="Decision">
+            <label for="Decision">Decision</label>
+
+            <br>
+
+            <input type="radio" name="winType" id="doctorStoppage" value="doctorStoppage">
+            <label for="doctorStoppage">Doctor Stoppage</label>
+
+            <br>
+
+            <input type="radio" name="winType" id="draw" value="draw">
+            <label for="draw">Draw</label>
+
+            <br><br>
+
+            <p>
+                Choose the Proper Checkbox for the Fighter
+            </p>
+
+            <input type="checkbox" id="strikes" values="strikes">
+            <label for="strikes">Over 100 Significant Strikes</label>
+
+            <br>
+
+            <input type="checkbox" id="takedowns" values="takedowns">
+            <label for="takedowns">Get over 5 takedowns</label>
+
+            <br>
+
+            <input type="checkbox" id="rounds" values="rounds">
+            <label for="rounds">Go over 3 rounds</label>
+
+            <br><br>
+
+            <label for="message">Which Fighters Will Your Fighter Call Out Next?</label>
+            <br>
+            <textarea id="message" cols="30" rows="3" placeholder="Fighters Name"></textarea>
+
+            <br><br>
+
+            <input type="reset" value="Clear Form">
+            <input type="submit" value="Place Bets" onclick="alert('Order Succesfully Processed!')">
+        </fieldset>
+    </form>
+</body>
+
+</html>
