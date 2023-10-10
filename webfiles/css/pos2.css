@@ -1,0 +1,48 @@
+/* 
+The liveserver also uses div tags, if you use css to apply to every div,
+it can also affect the div tags in liveserver tags, so you may get unwanted elements
+ */
+div {
+    position: static;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: gray;
+}
+
+div#one {
+    background-color: yellow;
+    float: left;
+}
+
+div#two {
+    background-color: orange;
+    float: left;
+}
+
+div#three {
+    background-color: red;
+    float: left;
+    clear: both;
+}
+
+div#four {
+    background-color: purple;
+    float: left;
+}
+
+div#container {
+    width: 500px;
+    height: 500px;
+    padding: 50px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-image: linear-gradient(lightblue, darkblue);
+    background-repeat: no-repeat;
+}
+
