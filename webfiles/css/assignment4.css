@@ -1,0 +1,44 @@
+body {
+    background-color: blanchedalmond;
+}
+
+a:link {
+    color: blue;
+}
+
+ a:visited {
+    color: darkred;
+} 
+
+a:hover {
+    color: red;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:active {
+    color: darkred;
+    text-decoration: line-through;
+}
+
+h1 {
+    color: brown;
+    font-family: "Big Caslon", serif;
+    font-size: 50px;
+    text-shadow: 1px 1px 3px lightcoral;
+}
+
+
+h2 {
+    color: brown;
+    font-family: "Big Caslon", serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px lightcoral
+}
+
+p {
+    color: brown;
+    font-family: "Big Caslon", serif;
+    line-height: 25px;
+    font-size: 20px;
+}
