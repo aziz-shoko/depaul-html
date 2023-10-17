@@ -40,6 +40,11 @@ aside#left{
     margin: 0 25px;
 }
 
+ul li {
+    color: #F2811D;
+    margin-bottom: 25px;
+}
+
 article {
     position: static;
     float: left;
@@ -47,7 +52,7 @@ article {
     height: 700px;
 }
 
-img {
+#pumpkin {
     width: 300px;
     height: auto;
     padding-left: 50px;
@@ -62,6 +67,12 @@ aside#right{
     margin: 0 25px;
 }
 
+#location {
+    width: 150px;
+    height: auto;
+    margin-left: 25px;
+}
+
 footer{
     position: static;
     clear: both;
@@ -69,5 +80,11 @@ footer{
 
 h1{}
 
-p{}
+p#address {
+    color: #F2811D;
+    margin-left: 50px;
+}
 
+figure {
+    margin: 0;
+}
