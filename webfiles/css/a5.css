@@ -12,7 +12,7 @@ div#container{
 }
 
 header {
-    color: #F2A03D;
+    color: #F2811D;
     text-align: center;
     font-size: 50px;
 }
@@ -41,7 +41,7 @@ aside#left{
 }
 
 ul li {
-    color: #F2811D;
+    color: #F2A03D;
     margin-bottom: 25px;
 }
 
@@ -55,7 +55,7 @@ article {
 img#pumpkin {
     width: 300px;
     height: auto;
-    padding-left: 50px;
+    padding-left: 90px;
 }
 
 aside#right{
@@ -83,15 +83,28 @@ img#party {
 footer{
     position: static;
     clear: both;
+    text-align: center;
 }
 
-h1{}
+a#attend {
+    font-size: 50px;
+    background-color: darkorange;
+    color: white;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+a#attend:hover {
+    color: darkred;
+}
 
 .info {
-    color: #F2811D;
+    color: #F2A03D;
     margin-left: 50px;
 }
 
-figure {
-    margin: 0;
+p#center-info {
+    color: #F2A03D;
+    text-align: center;
+    font-size: 25px;
 }
