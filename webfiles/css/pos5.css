@@ -1,0 +1,198 @@
+body {
+    background-color: #000000;
+}
+
+/* apply to all div tags */
+div {
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: comic sans ms;
+    text-align: center;
+    padding: 10px;
+}
+
+/* relative div to hold absolute divs */
+div#container {
+    position: relative;
+    background-color: bisque;
+    height: 650px;
+    width: 650px;
+    border: 10px solid white;
+    /* center this on page */
+    margin-left: auto;
+    margin-right: auto;
+    /* push away from the top of page*/
+    top: 100px;
+    z-index: 100;
+}
+
+/* absolute divs inside relative div */
+div#blue {
+    position: absolute;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    /* set the coordinates */
+    top: 0px;
+    left: 0px;
+    /* set the stacking order */
+    z-index: 10;
+    color: white;
+}
+
+div#red {
+    position: absolute;
+    background-color: red;
+    height: 300px;
+    width: 300px;
+    top: 200px;
+    left: 200px;
+    z-index: 30;
+    color: white;
+    transform: rotate(10deg);
+}
+
+div#green {
+    position: absolute;
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    top: 100px;
+    left: 100px;
+    z-index: 20;
+    color: white;
+    transform: rotate(5deg);
+}
+
+div#orange {
+    position: absolute;
+    background-color: rgba(255, 165, 0, 0.75);
+    height: 300px;
+    width: 300px;
+    top: 300px;
+    left: 300px;
+    z-index: 60;
+    border: 3px dashed white;
+    border-bottom-right-radius: 50%;
+    font-family: arial;
+    font-weight: bold;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.75);
+    transform: rotate(15deg);
+}
+
+div#purple {
+    position: absolute;
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+    bottom: 5px;
+    left: 5px;
+    /* make it a circle */
+    border-radius: 100%;
+    color: black;
+    font-family: impact;
+    border: 2px solid black;
+    box-shadow: 5px 5px 0px black;
+    font-size: 18px;
+    z-index: 90;
+    padding-top: 50px;
+    background-image: url(../pictures/cat.jpg);
+    background-position: -100px -50px;
+}
+
+div#navy {
+    position: absolute;
+    background-color: rgba(0,0,128,0.5);
+    height: 150px;
+    width: 200px;
+    top: 0px;
+    right: -20px;
+    z-index: 80;
+    box-shadow: 10px 10px 10px black;
+    border: 5px groove yellow;
+    font-family: impact;
+    transform: rotate(-15deg);
+}
+
+/* boxes outside of the relative container div */
+div#pink {
+    position: absolute;
+    background-color: deeppink;
+    height: 200px;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    z-index: 5;
+    color: maroon;
+    font-size: 20px;
+    font-family: stencil regular, fantasy;
+}
+
+div#yellow {
+    position: absolute;
+    background-color: yellow;
+    background-image: linear-gradient(yellow, orange,red, purple,black);
+    height: 6000px;
+    width: 175px;
+    top: 0px;
+    right: 0px;
+    z-index: 15;
+    color: purple;
+    font-size: 24px;
+    font-family: juice itc regular, cursive;
+}
+
+@font-face {
+    font-family: my_font;
+    src: url(arcadeclassic.ttf)
+}
+
+div#gray {
+    position: fixed;
+    background-color: gray;
+    height: 50px;
+    width: 100%;
+    font-size: 42px;
+    font-family: my_font;
+    color: black;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-shadow: 2px 2px 0px white;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+}
+
+div#brown {
+    position: fixed;
+    background-color: transparent;
+    height: 75px;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    color: white;
+    font-family: impact;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    z-index: 400;
+    text-shadow: 5px 5px 5px black;
+    background-image: url(../pictures/depaul_logo.png);
+    background-size: contain;
+}
+
+div#cyan {
+    position: absolute;
+    background-color: cyan;
+    background-image: radial-gradient(cyan,darkblue);
+    height: 200px;
+    width: 200px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 600;
+    padding-top: 30px;
+    color: black;
+    font-size: 30px;
+    font-family: rage, fantasy;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+}
