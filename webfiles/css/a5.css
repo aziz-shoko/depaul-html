@@ -52,7 +52,7 @@ article {
     height: 700px;
 }
 
-#pumpkin {
+img#pumpkin {
     width: 300px;
     height: auto;
     padding-left: 50px;
@@ -67,10 +67,17 @@ aside#right{
     margin: 0 25px;
 }
 
-#location {
+img.halloween {
     width: 150px;
     height: auto;
     margin-left: 25px;
+    padding-top: 25px;
+}
+
+img#party {
+    width: 150px;
+    height: auto;
+    padding-left: 25px;
 }
 
 footer{
@@ -80,11 +87,11 @@ footer{
 
 h1{}
 
-p#address {
+.info {
     color: #F2811D;
     margin-left: 50px;
 }
 
-figure#haunted-house {
+figure {
     margin: 0;
 }
