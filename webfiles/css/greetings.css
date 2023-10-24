@@ -1,0 +1,37 @@
+body {
+    background-color: lightyellow;
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;
+}
+
+div#box1 {
+    position: static;
+    box-sizing: border-box;
+    width: 675px;
+    padding: 25px;
+    background-color: lightblue;
+    border: 3px dashed white;
+    font-size: 32px;
+}
+
+div#box2 {
+    position: static;
+    box-sizing: border-box;
+    width: 675px;
+    padding: 25px;
+    background-color: lightgreen;
+    border: 3px dotted green;
+    font-size: 32px;
+}
+
+div#box3 {
+    position: static;
+    box-sizing: border-box;
+    width: 675px;
+    padding: 25px;
+    font-size: 32px;
+    text-align: right;
+}
