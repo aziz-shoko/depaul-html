@@ -1,0 +1,161 @@
+body {
+    background-color: #0D0D0D;
+}
+
+@font-face {
+    font-family: "ApolloFont";
+    src: url(../nasalization-rg.otf);
+}
+
+h1#title{
+    font-family: 'ApolloFont';
+    text-align: center;
+    font-size: 100px;
+    background-color: black;
+    color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+div#container {
+    position: relative;
+    background-color: #0B438C;
+    height: 800px;
+    width: 800px;
+    border: 10px solid #F2F2F2;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 100;
+}
+
+div#one {
+    position: absolute;
+    background-color: #0D0D0D;
+    height: 300px;
+    width: 300px;
+    top: 25px;
+    left: 25px;
+    border: 3px solid #F23827;
+    background-image: url(../pictures/a6/rocket.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+div#two {
+    position: absolute;
+    background-color: #0D0D0D;
+    height: 300px;
+    width: 300px;
+    top: 25px;
+    right: 25px;
+    border: 3px solid #F23827;
+    background-image: url(../pictures/a6/rocket2.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#three {
+    position: absolute;
+    background-color: #0D0D0D;
+    height: 300px;
+    width: 300px;
+    bottom: 25px;
+    left: 25px;
+    border: 3px solid #F23827;
+    background-image: url(../pictures/a6/rocket3.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#four {
+    position: absolute;
+    background-color: #0D0D0D;
+    height: 300px;
+    width: 300px;
+    bottom: 25px;
+    right: 25px;
+    border: 3px solid #F23827;
+    background-image: url(../pictures/a6/rocket4.jpeg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#five {
+    position: absolute;
+    background-color: #0F41A6;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    border: 3px solid #F23827;
+    background-image: url(../pictures/a6/nasa-logo.jpg);
+    background-size: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#six {
+    position: absolute;
+    background-color: #0F41A6;
+    height: 150px;
+    width: 200px;
+    bottom: 350px;
+    right: -80px;
+    z-index: 80;
+    box-shadow: 10px 10px 10px black;
+    border: 5px groove #F23827;
+    transform: rotate(-15deg);
+}
+
+div#six h1 {
+    color: white;
+    font-family: 'ApolloFont';
+    text-align: center;
+}
+
+
+div#seven {
+    position: absolute;
+    background-color: #0F41A6;
+    height: 150px;
+    width: 200px;
+    top: 300px;
+    left: -120px;
+    z-index: 80;
+    box-shadow: 10px 10px 10px black;
+    border: 5px groove #F23827;
+    transform: rotate(-15deg);
+    z-index: 70px;
+    border-radius: 100%;
+}
+
+div#seven h1 {
+    color: white;
+    font-family: 'ApolloFont';
+    text-align: center;
+}
+
+div#eight {
+    position: fixed;
+    background-color: #022c63;
+    height: 50px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    z-index: 500;
+}
+
+div#eight h1 {
+    font-size: 50px;
+    font-family: 'ApolloFont';
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
