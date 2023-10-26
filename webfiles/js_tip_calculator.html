@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lane="en">
+
+<head>
+    <meta chartset="utf-8">
+    <title> Javascript Tip Calculator</title>
+
+    <link rel="stylesheet" type="text/CSS" href="./css/tip-calculator.css">
+    <script src="./javascript/tip-calculator.js"></script>
+</head>
+
+<body>
+    <h1> Tip Calculator </h1>
+
+    <p>
+        <label for="amountBox">
+            Amount of Bill: $
+        </label>
+        <input type="text" size="5" id="amountBox" placeholder="0.00">
+    </p>
+
+    <p>
+        <label for="tipBox">
+            Percent You Want to Tip:
+        </label>
+        <input type="text" size="5" id="tipBox" value="15">%
+    </p>
+
+    <p>
+        <input type="button" value="Reset" onclick="resetDefaultValues();">
+        <input type="button" value="Calculate Tip" onclick="calculateTip();">
+    </p>
+
+    <p id="output">
+        &nbsp; <!--code for space char (adds a space)-->
+
+    </p>
+</body>
+
+</html>

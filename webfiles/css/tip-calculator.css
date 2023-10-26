@@ -1,0 +1,16 @@
+body {
+    background-color: lightyellow;
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;
+}
+
+input:hover {
+    background-color: lightgreen;
+}
+
+h1 {
+    margin-top: 0px;
+}
