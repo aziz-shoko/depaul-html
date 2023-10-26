@@ -49,5 +49,5 @@ function resetDefaultValues() {
     document.body.style.backgroundColor = "lightyellow";
 
     // set the page's text color to black
-    document.body.style.color = black;
+    document.body.style.color = "black";
 }
