@@ -1,0 +1,166 @@
+body {
+    background-color: black;
+    background-image: url(../pictures/penguins/background.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+
+}
+
+/* main div to hold everything */
+div#main {
+    position: static;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 900px;
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 15px 15px 10px rgba(0,0,0,0.5);
+}
+
+/* boxes that go inside of main */
+header {
+    position: static;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 150px;
+    background-color: darkblue;
+    background-image: url(../pictures/penguins/header_graphic.jpg)
+}
+
+nav {
+    position: static;
+    box-sizing: border-box;
+    width: 1000px;
+    height: 60px;
+    padding-top: 5px;
+    background-color: deepskyblue;
+    text-align: center;
+}
+
+aside#left {
+    position: static;
+    box-sizing: border-box;
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: blue;
+    background-image: url(../pictures/penguins/left_graphic.jpg);
+}
+
+article {
+    position: static;
+    box-sizing: border-box;
+    float: left;
+    width: 600px;
+    height: 650px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: auto;
+    background-color: white;
+}
+
+aside#right {
+    position: static;
+    box-sizing: border-box;
+    float: right;
+    width: 200px;
+    height: 650px;
+    background-color: lightblue;
+    background-image: url(../pictures/penguins/left_graphic.jpg);
+    background-image: url(../pictures/penguins/right_graphic.jpg);
+}
+
+footer {
+    position: static;
+    box-sizing: border-box;
+    clear: both;
+    width: 1000px;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #006599;
+    text-align: center;
+}
+
+/* style for the a tags inside of nav */
+nav a {
+    font-family: arial;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block; /* make each link behave like a div box */
+    border: 1px solid navy;
+    border-radius: 20px;
+}
+
+nav a:link {
+    color: white;
+    background-color: #1db2ff;
+    box-shadow: 4px 4px 0px navy;
+}
+
+nav a:visited {
+    color: white;
+    background-color: #1db2ff;
+    box-shadow: 4px 4px 0px navy;
+}
+
+nav a:hover {
+    color: yellow;
+    background-color: #55c5ff;
+    box-shadow: 6px 6px 0px navy;
+    transform: translate(-2px, -2px);
+}
+
+nav a:active {
+    color: lime;
+    background-color: #2525ea;
+    box-shadow: 0px 0px 0px navy;
+    transform: translate(4px, 4px);
+}
+
+/* style for text on the page */ 
+h1 {
+    color: black;
+    font-family: comic sans ms;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+p, blockquote {
+    color: black;
+    font-family: arial;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+small {
+    color: white;
+    font-family: arial;
+    font-size: 14px;
+}
+
+a {}
+
+a:link {
+    color: maroon;
+}
+
+a:visited {
+    color: maroon;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+a:active {
+    color: deeppink;
+}
+
