@@ -1,0 +1,14 @@
+body {
+    background-color: lightyellow;
+    color: black;
+    font-size: 24px;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input, select {
+    font-size: 24px;
+}

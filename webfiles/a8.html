@@ -1,13 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        
-        <link rel="stylesheet" type="text/CSS" href="./css/a8.css">
-        <script src="./javascript/a8.js"></script>
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment #8</title>
+
+    <link rel="stylesheet" type="text/CSS" href="./css/a8.css">
+    <script src="./javascript/a8.js"></script>
+</head>
+
+<body>
+    <h1>
+        &#127829;
+        Order a Pizza
+        &#127829;
+    </h1>
+
+    <p id="size">
+        What Size Do You Want?
+        <select name="size">
+            <option value="" id="no-size"></option>
+
+            <option value="small" id="small">
+                Small - $10.00
+            </option>
+            <option value="medium" id="medium">
+                Medium - $12.50
+            </option>
+            <option value="large" id="large">
+                Large - $15.00
+            </option>
+        </select>
+    </p>
+
+    <p>
+        What Toppings Do You Want?
+        <br>
+        <input type="checkbox" id="extracheese" value="extracheese">
+        <label for="extracheese">
+            Extra Cheese (add $2.00)
+        </label>
+        <br>
+        <input type="checkbox" id="pepperoni" value="pepperoni">
+        <label for="pepperoni">
+            Pepperoni ( add $2.25)
+        </label>
+        <br>
+        <input type="checkbox" id="sausage" value="sausage">
+        <label for="sausage">
+            Sausage (add $3.00)
+        </label>
+        <br>
+        <input type="checkbox" id="pineapple" value="pineapple">
+        <label for="pineapple">
+            Pineapple (add $4.50)
+        </label>
+        <br>
+        <input type="checkbox" id="chicken" value="chicken">
+        <label for="chicken">
+            Chicken (add $1.75)
+        </label>
+        <br>
+        <input type="checkbox" id="bacon" value="bacon">
+        <label for="bacon">
+            Bacon (add $1.50)
+        </label>
+        <!-- add 5 more toppings here -->
+    </p>
+
+    <p id="pickupOrDelivery">
+        Pickup or Delivery?
+        <br>
+        
+        <input type="radio" id="pickup" name="option" value="pickup">
+        <label for="pickup">Pickup</label>
+        <br>
+
+        <input type="radio" id="delivery" name="option" value="delivery">
+        <label for="delivery">Delivery (add $3.00)</label>
+    </p>
+
+    <p>
+        <small>
+            Note: 11.25% sales tax will be added to the cost of your pizza.
+        </small>
+    </p>
+
+    <p>
+        <input type="button" value="Calculate Price" onclick="calculateTotal();">
+    </p>
+
+    <p id="output">
+        &nbsp;
+    </p>
+</body>
+
 </html>
