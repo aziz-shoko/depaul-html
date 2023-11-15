@@ -1,0 +1,304 @@
+body {
+    background-color: #04050D;
+    margin: 0;
+    padding: 0;
+}
+
+#navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: space-evenly;
+    background-color: #1C1C26;
+    padding: 5px;
+}
+
+#navigation a {
+    padding: 10px;
+    color: #F2F2F2;
+    margin: 0 25px;
+}
+
+#navigation a:link {
+    color: #F2F2F2;
+}
+
+#navigation a:hover {
+    color: red;
+    font-size: 15px;
+}
+
+#navigation a:active {
+    color: darkred;
+    text-decoration: overline;
+}
+
+#parallax-container {
+    position: relative;
+    background-color: rgba(0,0,0,0.5);
+}
+
+#parallax-container img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+#background-circle {
+    position: absolute;
+    width: 325px;
+    height: 235px;
+    background: rgba(233, 225, 225, 0.5);
+    border-radius: 50%;
+    z-index: -1;
+    border: 3px solid #22222c;
+    /* transition is used to make the background cirle to fade in, I use it again for the logo picture */
+    transition: opacity 1s ease-in-out;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+#logo {
+    width: 600px;
+    height: auto;
+    transition: opacity 3s ease-in-out;
+}
+
+@font-face {
+    font-family: "CoffeeFont";
+    src: url(../coffee-mood.ttf);
+}
+
+#about-us-container {
+    background-color: #22222c;
+}
+
+#about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-text {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 600px;
+}
+
+#about-image {
+    width: 50%;
+    height: auto;
+    max-width: 500px;
+}
+
+#about-image img {
+    width: auto;
+    height: 600px;
+    object-fit: cover;
+    margin: 50px 25px 50px 25px;
+    box-shadow: 5px 5px 5px #A67B5B;
+}
+
+h2#about-us {
+    color: #F2F2F2;
+    font-size: 36px;
+    padding-top: 0px;
+    margin-top: 0px;
+    font-family: 'CoffeeFont';
+}
+
+p.about-us-paragraph {
+    color: #F2F2F2;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p.about-us-paragraph a {
+    color: #F2F2F2;
+}
+
+p.about-us-paragraph a:link {
+    color: #F2F2F2;
+}
+
+p.about-us-paragraph a:hover {
+    color: red;
+    font-size: 25px;
+}
+
+p.about-us-paragraph a:active {
+    color: darkred;
+}
+
+#menu-container {
+    /* background-color: #678293; */
+    background-color: #A67B5B;
+}
+
+#menu-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 40px;
+    color: #e3e0e0;
+    padding: 30px 15px 0px 15px;
+    font-family: 'CoffeeFont';
+}
+
+#menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-coffee, #menu-sides {
+    width: 482px;
+    height: 550px;
+    padding: 5px 20px 5px 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: #e3e0e0;
+    font-size: 25px;
+    font-weight: bold
+    
+}
+
+h4.menu-item-name {
+    color: #2d0000;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+p.menu-item-description {
+    margin-top: 2px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    color: #F2F2F2;
+}
+
+#specialty {
+    text-align: center;
+    background-color: #22222c;
+    padding: 25px 0px 100px 0px;
+}
+
+#specialty-title {
+    color: white;
+    font-size: 36px;
+    font-family: 'CoffeeFont';
+}
+
+#coffee-images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#coffee-images img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 0 10px #A67B5B;
+}
+
+#location-hours {
+    background-color: #A9A9A9;
+}
+
+#location-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loc-image img {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 480px;
+    height: 480px;
+    box-shadow: 0 0 10px 0px #F2F2F2;
+}
+
+#location-text {
+    background-color: #22222c;
+    width: 480px;
+    height: auto;
+    box-shadow: 0 0 10px 0px #F2F2F2;
+}
+
+#location-text h2 {
+    color: #C0C0C0;
+    font-size: 30px;
+    padding: 20px;
+    margin: 0;
+}
+
+#address {
+    color: #F2F2F2;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.day, .time {
+    color: #F2F2F2;
+    font-size: 20px;
+    padding-bottom: 13.4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.zuck-v-musk {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    margin: 0;
+    text-align: center;
+}
+
+.zuck-v-musk a {
+    color: #F2F2F2;
+}
+
+.zuck-v-musk a:hover {
+    color: lightblue;
+    font-size: 15px;
+}
+
+.zuck-v-musk a:active {
+    color: rgb(74, 95, 147);
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+
+
